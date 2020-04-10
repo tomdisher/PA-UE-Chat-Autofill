@@ -12,7 +12,7 @@ while (i > 0) {
     buttonsubmit[0].click();
     await new Promise(resolve => setTimeout(resolve, 15000)); // 15 sec
     var i = document.body.innerHTML.search("Chat Ended");("Chat Ended");
-    if(i < 0){
+    if(i > 0){
         var buttonclose = document.getElementsByClassName('cx-button-close');
         buttonclose[0].click();
     }
